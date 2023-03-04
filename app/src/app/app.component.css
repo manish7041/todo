@@ -1,0 +1,19 @@
+.heaerBox {
+    position: sticky;
+    background-color: #EB455F;
+  
+  }
+  
+  .add:hover {
+    scale: 1.5;
+  }
+  
+  
+  
+  .popBox{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:50%;
+  }

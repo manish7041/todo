@@ -1,0 +1,20 @@
+<div class="container d-flex-col 
+mx-5">
+  <!-- <app-header  class="fixed-top bg-white col"></app-header> -->
+  <header class=" fixed-top bg-white col fluid-container d-flex p-2 headerBox">
+    <div>
+      <h1>todo</h1>
+    </div>
+
+    <div class=" ms-auto ">
+      <img (click)="addpopValue()" class="m-2 add" src="assets/icons8-plus-math-ios-16-glyph/icons8-plus-math-30.png">
+    </div>
+  </header>
+  <div class="d-flex gap-5 row-12 " style="margin-top: 100px;">
+    <app-nav class="col-3"></app-nav>
+    <app-tasks class="col-9"></app-tasks>
+  </div>  
+  <app-popup [value]="data" (popUpValue)="add($event)"></app-popup>
+</div>
+
+<router-outlet></router-outlet>

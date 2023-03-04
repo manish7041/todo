@@ -1,0 +1,24 @@
+<div id="myModal" class="modal" *ngIf="value === 'true'">
+
+  <!-- Modal content -->
+  <form class="modal-content" #taskForm="ngForm" (submit)="addTask(taskForm.value)">
+    <div class="modal-header">
+      <span (click)="closePop()" class="close">&times;</span>
+    </div>
+    <div class="modal-body">
+      <div>
+        <label>{{value}}</label>
+        <input type="text" name="title" ngModel>
+      </div>
+      <div>
+        <label>description</label>
+        <input type="text" name="description" ngModel>
+      </div>
+      <div>
+        <label>Type</label>
+        <input type="text" name="type" ngModel>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" (click)="closePop()">Submit</button>
+      </div>
+    </div>
